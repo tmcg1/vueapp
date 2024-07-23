@@ -1,18 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar />
+  <ProductsView />
+  <ContactView />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import ProductsView from './components/ProductsView.vue'
+import ContactView from './components/ContactView.vue'
+import { ref } from 'vue'
+
+const bottomEl = ref(null)
 
 export default {
   name: 'App',
+  props: {
+    bottomEl
+  },
   components: {
-    HelloWorld
+    NavBar, ProductsView, ContactView
   }
 }
 </script>
+
+
 
 <style>
 #app {
