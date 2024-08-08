@@ -1,6 +1,6 @@
 <template>
    <div class="header">
-      <img alt="Logo" src="./assets/agriest.jpg">
+      <img alt="Logo" src="./assets/logo.jpg">
       <div class="menus">
           <div @click="scrollToBottom('products')">Müük</div>
           <div @click="scrollToBottom('contact')">Kontakt</div>
@@ -40,7 +40,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px
+    gap: 30px;
 }
 
 .menus {
