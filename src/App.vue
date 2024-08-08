@@ -2,10 +2,14 @@
    <div class="header">
       <img alt="Logo" src="./assets/logo.jpg">
       <div class="menus">
+          <div @click="scrollToBottom('about')">Meist</div>
           <div @click="scrollToBottom('products')">Müük</div>
           <div @click="scrollToBottom('contact')">Kontakt</div>
       </div>
   </div>
+
+  <div ref="about"></div>
+  <AboutView />
 
   <div ref="products"></div>
   <ProductsView />
@@ -17,11 +21,12 @@
 <script>
 import ProductsView from './components/ProductsView.vue'
 import ContactView from './components/ContactView.vue'
+import AboutView from './components/AboutView.vue'
 
 export default {
   name: 'App',
   components: {
-    ProductsView, ContactView
+    ProductsView, ContactView, AboutView
   },
   methods: {
         scrollToBottom(element) {
@@ -45,7 +50,7 @@ img {
     top: 0;
     width: 100%;
     background: white;
-    height: 200px;
+    height: 120px;
 }
 
 .menus {

@@ -1,19 +1,20 @@
 <template>
-    <div class="products">
-        <h1>Products</h1>
+    <div class="about" >
+        <h1>About</h1>
     </div>
 </template>
   
 <script>
 export default {
-    name: 'ProductsView',
+    name: 'AboutView',
 }
 </script>
   
 <style scoped>
-.products {
+.about {
     height: 800px;
     background-color: green;
+    padding-top: 120px;
 }
 </style>
   
