@@ -17,8 +17,8 @@ export default {
     },
     methods: {
         scrollToBottom() {
-            console.log('this.$refs', this.$refs, this.$root.$refs, bottomEl)
-            this.$refs.bottomEl?.scrollIntoView({ behavior: 'smooth' });
+            // console.log('this.$refs', this.$refs, this.$root.$refs, bottomEl)
+            // this.$refs.bottomEl?.scrollIntoView({ behavior: 'smooth' });
         },
     },
 }

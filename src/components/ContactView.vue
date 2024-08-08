@@ -2,15 +2,15 @@
     <div class="contact">
         <h1>Contact</h1>
     </div>
-    <div :ref="bottomEl"></div>
+    <!-- <div :ref="bottomEl"></div> -->
 </template>
   
 <script>
 export default {
     name: 'ContactView',
-    props: {
-        bottomEl: String
-    },
+    // props: {
+    //     bottomEl: String
+    // },
 }
 </script>
   
