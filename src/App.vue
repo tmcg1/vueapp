@@ -1,35 +1,50 @@
 <template>
-  <NavBar />
+   <div class="header">
+      <img alt="Logo" src="./assets/agriest.jpg">
+      <div class="menus">
+          <div @click="scrollToBottom('products')">Müük</div>
+          <div @click="scrollToBottom('contact')">Kontakt</div>
+      </div>
+  </div>
+
+  <div ref="products"></div>
   <ProductsView />
+
+  <div ref="contact"></div>
   <ContactView />
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
 import ProductsView from './components/ProductsView.vue'
 import ContactView from './components/ContactView.vue'
-import { ref } from 'vue'
-
-const bottomEl = ref(null)
 
 export default {
   name: 'App',
-  props: {
-    bottomEl
-  },
   components: {
-    NavBar, ProductsView, ContactView
-  }
+    ProductsView, ContactView
+  },
+  methods: {
+        scrollToBottom(element) {
+            this.$refs[element]?.scrollIntoView({ behavior: 'smooth' });
+        },
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+img {
+    width: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+.menus {
+    display: flex;
+    gap: 20px
 }
 </style>

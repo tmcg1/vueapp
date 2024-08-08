@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="header">
         <img alt="Logo" src="../assets/agriest.jpg">
         <div class="menus">
@@ -9,16 +9,13 @@
 </template>
   
 <script>
+
 export default {
     name: 'NavBar',
-    props: {
-        msg: String,
-        bottomEl: String
-    },
     methods: {
         scrollToBottom() {
-            // console.log('this.$refs', this.$refs, this.$root.$refs, bottomEl)
-            // this.$refs.bottomEl?.scrollIntoView({ behavior: 'smooth' });
+            this.$refs.bottomEl?.scrollIntoView({ behavior: 'smooth' });
+
         },
     },
 }
@@ -41,4 +38,4 @@ img {
     gap: 20px
 }
 </style>
-  
+   -->
