@@ -14,6 +14,7 @@ export default {
 .products {
     height: 800px;
     background-color: green;
+    padding-top: 200px;
 }
 </style>
   

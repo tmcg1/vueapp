@@ -41,6 +41,11 @@ img {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 200px;
 }
 
 .menus {
